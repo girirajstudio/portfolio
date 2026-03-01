@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriraj Studio 2.0 | Cinematic Wedding Photography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="gold-text">G|S</h1>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="gold-text">GIRIRAJ</span> STUDIO 2.0
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#gallery">Art Gallery</a></li>
+                <li><a href="#contact">Connect</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="reveal-text">Giriraj Studio 2.0</h1>
+            <p class="tagline">Capturing Moments, Creating Memories</p>
+            <div class="hero-cta">
+                <a href="#gallery" class="btn-gold">Explore Our Work</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image reveal">
+                    <img src="main.JPG" alt="Wedding Moment">
+                    <div class="image-border"></div>
+                </div>
+                <div class="about-text">
+                    <h5 class="gold-text">SINCE 1997</h5>
+                    <h2>A Legacy of Visual Storytelling</h2>
+                    <p class="story">For over two decades, we haven't just taken photos; we've preserved the soul of emotions. Giriraj Studio 2.0 blends the timeless elegance of traditional photography with the cinematic flair of modern filmmaking.</p>
+                    
+                    <div class="info-grid">
+                        <div class="info-item"><span>Est:</span> 1997</div>
+                        <div class="info-item"><span>Focus:</span> Luxury Weddings</div>
+                        <div class="info-item"><span>Location:</span> India</div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <h3 class="counter" data-target="3">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="counter" data-target="100">0</h3>
+                            <p>Weddings Covered</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="counter" data-target="5000">0</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specialties">
+                <h3 class="center-title">Our Specialties</h3>
+                <div class="spec-grid">
+                    <div class="spec-card">
+                        <i class="fas fa-heart"></i>
+                        <p>Creative Storytelling focused on raw emotions.</p>
+                    </div>
+                    <div class="spec-card">
+                        <i class="fas fa-camera-retro"></i>
+                        <p>Advanced Technology for 4K cinematic clarity.</p>
+                    </div>
+                    <div class="spec-card">
+                        <i class="fas fa-user-tie"></i>
+                        <p>Professional Team with a discreet presence.</p>
+                    </div>
+                    <div class="spec-card">
+                        <i class="fas fa-gem"></i>
+                        <p>Customized Solutions tailored to your vision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="center-title">Our Art Gallery</h2>
+            
+            <div class="folder-container" id="folder-view">
+                <div class="folder" onclick="openGallery('pre-wedding')">
+                    <div class="folder-paper"></div>
+                   <center> <div class="folder-main">Pre-Wedding</div></center>
+                </div>
+                <div class="folder" onclick="openGallery('wedding')">
+                    <div class="folder-paper"></div>
+                   <center><div class="folder-main">Wedding</div></center>
+                </div>
+                <div class="folder" onclick="openGallery('ceremony')">
+                    <div class="folder-paper"></div>
+                   <center> <div class="folder-main"> RingCeremonies</div></center>
+                </div>
+                <div class="folder" onclick="openGallery('baby-shower')">
+                    <div class="folder-paper"></div>
+                    <center><div class="folder-main">baby shower</div></center>
+                </div>
+                <div class="folder" onclick="openGallery('exclusive')">
+                    <div class="folder-paper"></div>
+                   <center> <div class="folder-main">Exclusive</div></center>
+                </div>
+            </div>
+
+            <div id="gallery-display" class="gallery-display hidden">
+                <button class="btn-back" onclick="closeGallery()"><i class="fas fa-arrow-left"></i> Back to Folders</button>
+                <h3 id="gallery-title" class="gold-text">Category</h3>
+                <div class="masonry-grid" id="masonry-grid">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="center-title">Let's Create Memories Together</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <i class="fas fa-phone gold-text"></i>
+                        <div>
+                            <p><a href="tel:6351717272">+91 6351717272</a></p>
+                            <p><a href="tel:6355440130">+91 6355440130</a></p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-envelope gold-text"></i>
+                        <p><a href="mailto:pritgosai001@gmail.com">pritgosai001@gmail.com</a></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://wa.me/916351717272" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-group">
+                        <select id="event-type">
+                            <option value="">Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="pre-wedding">Pre-Wedding</option>
+                            <option value="other">Other Event</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="5" placeholder="Tell us about your event..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-gold">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/916351717272" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Giriraj Studio 2.0. Crafted with Elegance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
